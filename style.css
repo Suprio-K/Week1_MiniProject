@@ -1,0 +1,83 @@
+//CSS
+
+/* Reset default margin and padding */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the quiz container */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Styling for the question container */
+.question-container {
+    margin-bottom: 20px;
+}
+
+/* Styling for the question */
+#question {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the options */
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Styling for option buttons */
+.options button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+/* Styling for navigation buttons */
+.button-container button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Disabled navigation buttons */
+.button-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Styling for the progress bar */
+.progress-container {
+    height: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Styling for the progress bar fill */
+.progress {
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.3s;
+}
+
+/* Styling for feedback text */
+#feedback {
+    font-size: 16px;
+    margin-top: 10px;
+}
